@@ -21,3 +21,16 @@ const storyObj = {
        borderColor:"#acd157"
        }
  }
+
+ function displayStory(genre) {
+    if(Object.hasOwn(storyObj, genre)){
+      resultParagraph.textContent = storyObj[genre].story;
+      storyContainer.style.borderColor = storyObj[genre].borderColor;
+    }
+}
+
+
+
+scaryStoryBtn.addEventListener("click", displayStory);
+
+console.log(displayStory("scary"))
