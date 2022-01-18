@@ -31,6 +31,6 @@ const storyObj = {
 
 
 
-scaryStoryBtn.addEventListener("click", displayStory);
-
-console.log(displayStory("scary"))
+scaryStoryBtn.addEventListener("click", () => displayStory("scary"));
+funnyStoryBtn.addEventListener("click", () => displayStory("funny"));
+adventureStoryBtn.addEventListener("click", () => displayStory("adventure"));
